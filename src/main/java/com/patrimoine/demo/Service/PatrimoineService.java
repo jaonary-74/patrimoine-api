@@ -3,8 +3,7 @@ package com.patrimoine.demo.Service;
 import com.patrimoine.demo.Model.Patrimoine;
 import com.patrimoine.demo.Model.PatrimoineNotFoundException;
 import com.patrimoine.demo.Repository.PatrimoineRepository;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -12,6 +11,8 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Service
+@AllArgsConstructor
+@ToString
 public class PatrimoineService {
     private final PatrimoineRepository patrimoineRepository;
 
