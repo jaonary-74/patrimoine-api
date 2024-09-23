@@ -58,7 +58,7 @@ public class PatrimoineTest {
     }
 
     @Test
-    void create_or_update_patrimoine_ok() throws Exception {
+    void save_or_update_patrimoine_ok() throws Exception {
         String id = "1";
         Patrimoine existingPatrimoine = new Patrimoine();
         existingPatrimoine.setOwner("John Doe");
